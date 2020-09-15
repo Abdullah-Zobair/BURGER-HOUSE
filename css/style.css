@@ -1,0 +1,261 @@
+
+/*google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+/*global css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2{
+	 font-family: 'Alfa Slab One', cursive;
+}
+p,span,input{
+   font-family: 'Montserrat', sans-serif;
+}
+h3,h4,h5,h6,button{
+   font-family: 'Bebas Neue', cursive;
+}
+a,a:hover{
+	text-decoration: none;
+}
+
+/*************************************
+           header part css 
+ *************************************/
+ header{
+ 	width: 100%;
+ 	background: url(../img/banner.png);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	height: 100vh;
+ }
+ .navbar{
+ 	padding: 22px 0px !important;
+ }
+ .nav-item{
+ 	margin-left: 20px;
+ }
+.nav-link{
+	font-weight: 200;
+	font-size: 12px;
+	font-family: 'Alfa Slab One', cursive;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.nav-link:hover{
+	transition: all 0.3s ease-in-out;
+	transform: scale(1.1);
+	color: white !important;
+}
+/*************************************
+           banner part css 
+ *************************************/
+.banner{
+	width: 100%;
+	margin: 200px 0px;
+}
+.banner .pre-title{
+	font-size: 18px;
+	border: 3px dashed #3D2514;
+	padding: 8px;
+	display: inline-block;
+}
+.banner .title{
+	font-size: 87px;
+	color: #3D2514;
+	font-weight: 600;
+	text-shadow: 4px 4px #fee8bb;
+}
+.banner .sub-title{
+	font-size: 43px;
+	color: #3D2514;
+	text-shadow: 3px 3px #fee8bb;
+}
+/*************************************
+           burger-blog part css 
+ *************************************/
+.burger-blog{
+    width: 100%;
+    padding: 50px;
+}
+.uper-img{
+	margin-bottom: 25px;
+}
+.blog-button{
+	text-align: center;
+	margin-top: 50px;
+}
+button{
+	padding: 20px 50px;
+	color: #3D2514 !important;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+}
+.btn-primary{
+	background: #ffc045;
+	border-radius: 0;
+	border: 1px solid #ffc045;
+}
+/*************************************
+           chose&enjoy part css 
+ *************************************/
+ .blog-part{
+ 	width: 100%;
+ 	margin-bottom: 40px;
+ }
+.tile-part{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.tile-part h1{
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: #3d2514;
+}
+/*************************************
+           order now part css 
+ *************************************/
+.order-now{
+	width: 100%;
+	text-align: center;
+}
+.order-now button{
+	 font-family: 'Alfa Slab One', cursive;
+	 background: #BF2222;
+	 border-radius: 0;
+	 color: white !important;
+	 padding: 12px 22px !important;
+	 border: 1px solid #C00E0E;
+	 margin: 20px 0px;
+	 font-size: 16px;
+}
+/*************************************
+           event part css 
+ *************************************/
+ .event{
+ 	width: 100%;
+ 	padding: 60px 0px;
+ }
+ .event-info{
+ 	padding: 50px 20px;
+ }
+ .event-body{
+ 	transition: all 0.5s ease-in-out;
+ }
+ .event-body:hover{
+ 	box-shadow: 6px 5px 12px 0px rgba(0,0,0,0.6);
+ 	transition: all 0.5s ease-in-out;
+ }
+ .owl-theme .owl-nav{
+ 	display: none;
+ }
+ .owl-dots{
+ 	position: absolute;
+ 	bottom: 0px;
+ 	left: 30px;
+ }
+ .owl-theme .owl-dots .owl-dot.active span{
+ 	background: #ffc045 !important;
+ }
+ /*************************************
+           form part css 
+ *************************************/
+ .form-tag{
+   width: 100%;
+   background: url(../img/form.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh;
+   margin: 60px 0px;
+ }
+ .from-sec{
+ 	text-align: center;
+ }
+ .form{
+ 	padding: 60px 0px;
+ }
+ .from-info{
+    padding: 80px 0px;
+ }
+ .from-sec input{
+ 	margin: 10px 10px;
+ 	padding: 10px 40px;
+ }
+ .from-sec button{
+ 	padding: 10px 95px;
+ 	margin: 10px 10px;
+ 	background: #C00E0E;
+ 	border: 1px solid #C00E0E;
+ 	color: white !important;
+ 	font-size: 20px;
+ 	font-weight: 600;
+ 	letter-spacing: 2px;
+ }
+ /*************************************
+           footer part css 
+ *************************************/
+ .footer-part{
+   width: 100%;
+   background: url(../img/footer.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 80vh;
+   margin: 20px 0px;
+
+ }
+ .footer-left{
+ 	color: white;
+ 	margin: 80px;
+ }
+ .footer-left p{
+ 	margin: 30px 0px;
+ }
+ .footer-right{
+ 	color: white;
+ 	text-align: center;
+    margin: 200px 0px;
+ }
+ .footer-right ul li{
+ 	list-style: none;
+ 	margin-bottom: 10px;
+ }
+ .footer-right ul li i{
+ 	padding-right: 20px;
+ 	text-align: left;
+ 	font-size: 22px;
+ }
+ .icon-footer{
+    text-align: right !important;
+    margin-top: 220px;
+    margin-right: 20px;
+ }
+ .icon-footer ul li{
+   display: inline-block !important;
+   list-style: none;
+   
+ }
+ .icon-footer ul li a i{
+ 	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	background:white;
+	border-radius: 50px;
+	line-height: 30px !important;
+	color: black;
+	line-height: 30px;
+	text-align: center !important;
+	margin: 0px 2px;
+	padding-left: 6px !important;
+	 transition: all 0.3s ease-in-out;
+ }
+ .icon-footer ul li a i:hover{
+    transition: all 0.3s ease-in-out;
+	transform: scale(1.1);
+ }
+ 
