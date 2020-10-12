@@ -3,19 +3,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 /*global css*/
 *{
 	margin: 0;
 	padding: 0;
 }
 h1,h2{
-	 font-family: 'Alfa Slab One', cursive;
+	 font-family: 'Alfa Slab One', cursive !important;
 }
 p,span,input{
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Montserrat', sans-serif !important;
 }
 h3,h4,h5,h6,button{
-   font-family: 'Bebas Neue', cursive;
+   font-family: 'Bebas Neue', cursive !important;
 }
 a,a:hover{
 	text-decoration: none;
@@ -41,7 +42,7 @@ a,a:hover{
 .nav-link{
 	font-weight: 200;
 	font-size: 12px;
-	font-family: 'Alfa Slab One', cursive;
+	font-family: 'Alfa Slab One', cursive !important;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -124,7 +125,7 @@ button{
 	text-align: center;
 }
 .order-now button{
-	 font-family: 'Alfa Slab One', cursive;
+	 font-family: 'Alfa Slab One', cursive !important;
 	 background: #BF2222;
 	 border-radius: 0;
 	 color: white !important;
@@ -164,7 +165,7 @@ button{
  /*************************************
            form part css 
  *************************************/
- .form-tag{
+ .form-part{
    width: 100%;
    background: url(../img/form.png);
    background-size: cover;
@@ -184,10 +185,10 @@ button{
  }
  .from-sec input{
  	margin: 10px 10px;
- 	padding: 10px 40px;
+ 	padding: 10px 60px;
  }
  .from-sec button{
- 	padding: 10px 95px;
+ 	padding: 10px 114px;
  	margin: 10px 10px;
  	background: #C00E0E;
  	border: 1px solid #C00E0E;
@@ -199,7 +200,7 @@ button{
  /*************************************
            footer part css 
  *************************************/
- .footer-part{
+ .footer-sec{
    width: 100%;
    background: url(../img/footer.png);
    background-size: cover;
@@ -209,17 +210,25 @@ button{
    margin: 20px 0px;
 
  }
- .footer-left{
- 	color: white;
- 	margin: 80px;
- }
+ .footer-left {
+    color: white;
+    margin: 60px 0px;
+}
+.footer-left img{
+	width: 75%;
+}
  .footer-left p{
- 	margin: 30px 0px;
+ 	margin: 40px 0px;
  }
- .footer-right{
- 	color: white;
+ .footer-right {
+    color: white;
+    text-align: center;
+    margin-top: 210px;
+    margin-left: 80px;
+}
+ .fot-icon{
  	text-align: center;
-    margin: 200px 0px;
+ 	margin-left: 60px !important;
  }
  .footer-right ul li{
  	list-style: none;
@@ -230,11 +239,11 @@ button{
  	text-align: left;
  	font-size: 22px;
  }
- .icon-footer{
+ .icon-footer {
     text-align: right !important;
-    margin-top: 220px;
-    margin-right: 20px;
- }
+    margin-top: 250px;
+    margin-right: -100px;
+}
  .icon-footer ul li{
    display: inline-block !important;
    list-style: none;
@@ -258,4 +267,185 @@ button{
     transition: all 0.3s ease-in-out;
 	transform: scale(1.1);
  }
- 
+
+
+
+ /********************************
+        media query css
+ *********************************/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ header {
+    width: 100%;
+    height: auto;
+    background: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner {
+    width: 100%;
+    margin: 20px 0px;
+}
+.banner .title {
+    font-size: 70px;
+    color: #3D2514;
+    font-weight: 600;
+    text-shadow: 4px 4px #fee8bb;
+}
+.burger-blog {
+    width: 100%;
+    padding: 50px 0px;
+}
+.event-info {
+	padding: 20px 0px;
+}
+.event-info h1{
+	font-size: 28px;
+}
+.slider-img{
+	display: flex;
+	align-items: center;
+}
+.form-part{
+	height: auto;
+	margin: 0px 0px;
+}
+.footer-sec {
+    width: 100%;
+    background: url(../img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    margin: 20px 0px;
+}
+.footer-right ul li i {
+    padding-right: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.icon-footer {
+    text-align: right !important;
+    margin-top: 100px !important;
+    margin-right: 0px !important;
+}
+.footer-right {
+    color: white;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: 0px;
+}
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header{
+  	height: 50vh;
+  }
+  .banner .title {
+  	font-size: 54px;
+  }
+  .banner {
+    width: 100%;
+    margin: 0px 0px;
+}
+.banner .sub-title {
+    font-size: 40px;
+ }
+.burger-blog{
+	padding: 0px 0px;
+}
+.mbl-img{
+	margin-top: 30px;
+}
+.burger-blog{
+	margin: 20px 0px 40px 0px !important;
+}
+.tile-part h1 {
+    font-size: 40px;
+}
+.event-info h1{
+	font-size: 25px;
+	margin-bottom: 18px;
+}
+.event-info h3{
+	font-size: 20px;
+}
+.event{
+	padding: 40px 0px;
+}
+.event-info{
+	padding: 40px 10px;
+}
+.from-sec button{
+	padding: 14px 114px;
+	font-size: 14px;
+	text-align: center !important;
+}
+.footer-right {
+    margin: 0px 0px;
+}
+.icon-footer {
+    text-align: center !important;
+    margin-top: 50px;
+    margin-right: 0px;
+}
+.fot-icon {
+    text-align: center;
+    margin-left: 0px !important;
+}
+}
